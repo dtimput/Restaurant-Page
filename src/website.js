@@ -6,24 +6,22 @@ const loadWebsite = () => {
   container.appendChild(header);
 
   const home = document.createElement("a");
+  home.setAttribute("href", "#");
+  home.classList.add("home");
   home.textContent = "Home";
   const menu = document.createElement("a");
+  menu.setAttribute("href", "#");
+  menu.classList.add("menu");
   menu.textContent = "Menu";
   const about = document.createElement("a");
+  about.setAttribute("href", "#");
+  about.classList.add("about");
   about.textContent = "About";
   header.append(home, menu, about);
 
   const content = document.createElement("div");
   content.classList.add("content");
   container.appendChild(content);
-
-  const brand = document.createElement("div");
-  brand.classList.add("brand");
-  brand.textContent = "Dylan's Famous Thai";
-  const motto = document.createElement("div");
-  motto.classList.add("motto");
-  motto.textContent = "Rated best Thai Restaurant in Las Vegas!";
-  content.append(brand, motto);
 
   const footer = document.createElement("div");
   footer.classList.add("footer");
