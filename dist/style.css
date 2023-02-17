@@ -3,6 +3,10 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -20,13 +24,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid gold;
+  border-bottom: 2px solid darkgoldenrod;
 }
 
-.header > div {
+.header > a {
   margin-left: 60px;
   margin-right: 60px;
   color: white;
-  font-family: cursive;
+  font-family: "Parisienne", cursive;
   font-size: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  font-family: "Parisienne", cursive;
+  font-size: 90px;
+  font-weight: bolder;
+  color: white;
+}
+
+.motto {
+  font-family: "Parisienne", cursive;
+  font-size: 30px;
+  font-weight: bolder;
+  color: darkgoldenrod;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  font-family: "Parisienne", cursive;
+  border-top: 2px solid darkgoldenrod;
+  width: 100%;
 }
